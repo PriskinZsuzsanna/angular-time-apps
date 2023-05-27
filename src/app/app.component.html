@@ -28,7 +28,7 @@
       <span *ngIf="mSeconds >=10">{{mSeconds}}</span>
     </h1>
     <div *ngIf="!paused" class="img-div">
-      <img src="../assets/stopwatch.jpg" alt="">
+      <img src="assets/stopwatch.jpg" alt="">
     </div>
     <div class="btn-div">
       <button (click)="start()" *ngIf="paused" class="btn btn-primary">Start</button>
@@ -68,7 +68,7 @@
     </h1>
     <div *ngIf="ringing" class="ringing">
       <div class="img-div">
-        <img src="../assets/clock-img.jpg" alt="alarm-clock">
+        <img src="assets/clock-img.jpg" alt="alarm-clock">
         <div class="btn-div">
           <button (click)="stopAlarm()" class="btn btn-primary">Stop</button>
           <button (click)="sneezeAlarm()" class="btn btn-primary">Sneeze</button>
@@ -98,7 +98,7 @@
     </div>
     <div *ngIf="timerRinging" class="ringing">
       <div class="img-div">
-        <img src="../assets/timer.jpg" alt="sand-clock">
+        <img src="assets/timer.jpg" alt="sand-clock">
         <div class="btn-div">
           <button (click)="sneezeTimer()" class="btn btn-primary">Sneeze</button>
           <button (click)="resetTimer()" class="btn btn-primary">Reset</button>

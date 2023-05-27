@@ -134,7 +134,7 @@ export class AppComponent {
   //clock
   ngOnInit(): void {
     //timer, alarm
-    this.audio.src = "../../../assets/alarm.mp3";
+    this.audio.src = "assets/alarm.mp3";
     this.audio.load();
     //clock
     setInterval(() => {
