@@ -1,0 +1,119 @@
+.container {
+  width: 95%;
+  min-width: 280px;
+  min-height: 100vh;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .section {
+  max-width: 280px;
+  margin-inline: auto;
+  margin-block: 2rem;
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.container .section span.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px #505e6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .section h1,
+.container .section h2,
+.container .section .btn-div {
+  text-align: center;
+}
+.container .section .btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  flex-wrap: wrap;
+}
+.container .section .btn-primary {
+  background: #f4476b;
+  border: none;
+  padding: 0.6rem;
+  margin-block: 5px 10px;
+  min-width: 100px;
+}
+.container .section .btn-primary:hover {
+  background: #eb3b60;
+}
+.container .section .clock-btn {
+  min-width: 170px;
+}
+.container .section input {
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background: #f4476b;
+  color: #fff;
+}
+.container .section .img-div {
+  width: 70%;
+  margin-inline: auto;
+}
+.container .section .img-div img {
+  width: 100%;
+}
+.container .footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+.container .footer .box-button h2 {
+  width: 30%;
+  min-width: 230px;
+  margin-inline: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 3rem;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-block: 0.2em;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.container .footer .box-button h2:hover {
+  color: #fff;
+}
+.container .footer .box-button h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  background: #f4476b;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.container .footer .box-button h2:hover::before {
+  left: 0;
+  right: 0;
+}/*# sourceMappingURL=app.component.css.map */
